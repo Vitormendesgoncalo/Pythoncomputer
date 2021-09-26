@@ -1,4 +1,5 @@
 def Subir(): #Função subir
+    print("case1") #Imprimi palavra
 
 def Descer(): #Função descer
     print("case2") #Imprimi palavra
