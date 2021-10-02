@@ -1,0 +1,3 @@
+Dois numeros somados: int(input()) - print({}.format())
+Função dicionário: While True - dict - if - elif
+Funçao For: For
