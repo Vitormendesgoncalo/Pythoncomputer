@@ -14,8 +14,8 @@
 #    Comando() #Roda a função escrita na variável Comando
 
 print('CONTROLE DE ESTOQUE')
-Matriz = [('Parafuso',10)]
-Estoque = dict(Matriz)
+Matriz = [('Parafuso',10)] #Criado Matrix
+Estoque = dict(Matriz) #Transforma Matrix em dicionário
  
 
 
