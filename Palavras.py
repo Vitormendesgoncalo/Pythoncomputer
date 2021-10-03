@@ -1,0 +1,7 @@
+Name = input("Write some word, please: ")
+print("The type of this word is: {}".format(type(Name)))
+print("This name just have space? {} ".format(Name.isspace()))
+print("This caracter just have numbers? {}".format(Name.isnumeric()))
+print("This name just have words? {}".format(Name.isalpha()))
+print("This name just have upper? {}".format(Name.isupper()))
+print("This name just have? {}".format(Name.islower()))
