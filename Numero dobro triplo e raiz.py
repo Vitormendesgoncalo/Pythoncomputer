@@ -1,0 +1,5 @@
+Number = int(input('Enter an integer value: '))
+print("The double that number is {}".format(Number * 2))
+print("The triple that number is {}".format(Number * 3))
+print("The square root that number is {}".format(Number**(1/2)))
+print(pow(Number, 1/2))
