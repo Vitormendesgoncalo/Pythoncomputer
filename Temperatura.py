@@ -1,5 +1,5 @@
 def Choice(Temperature, Type):
-    Change = input('What temperature do you want to change (ºC, ºF, ºK)?: ')
+    Change = input('\nWhat temperature do you want to change (ºC, ºF, ºK)?: ')
     if Type == 'c' or Type == 'C':
         if Change == 'c' or Change == 'C':
             print('The temperature is {:.2f}'.format(Temperature))
@@ -16,7 +16,7 @@ def Choice(Temperature, Type):
             print('The temperature is {:.2f}'.format((((5/9) * Temperature) - 32)+273))
     elif Type == 'k' or Type == 'K':
         if Change == 'c' or Change == 'C':
-            print('The temperature is {:.2f}'.format(Temperature - 273)
+            print('The temperature is {:.2f}'.format(Temperature - 273))
         elif Change == 'f' or Change == 'F':
             print('The temperature is {:.2f}'.format(((Temperature - 273)*9/5)+32))
         elif Change == 'k' or Change == 'K':
@@ -25,7 +25,7 @@ def Choice(Temperature, Type):
 while True:
     print('We will show you which temperature you want!')
     Temperature = float(input('Enter the temperature you measured: '))
-    Type = input('Enter the temperature type (ºC, ºF, ºK): ')
+    Type = input('\nEnter the temperature type (ºC, ºF, ºK): ')
     Choice (Temperature, Type)
 
 
