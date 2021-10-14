@@ -1,14 +1,17 @@
-def Subir(): #Função subir
-    print("case1") #Imprimi palavra
-
-def Descer(): #Função descer
-    print("case2") #Imprimi palavra
-
-
+def Up():
+    print("Up")
+def Down():
+    print("Up")
+def Right():
+    print("Up")
+def Left():
+    print("Up")
 while True:
-    Comando = { #Chaves abre o dicionário
-        0:Subir, # (Subir) pertence (:) ao numero (0)
-        1:Descer,# (Descer) pertence (:) ao numero (1)
-        }
-    Comando = Comando.get (int(input('Digite o numero 0 para "Subir" ou 1 para "Descer": '))) # (Comando.get) roda o dicionário aquisitando a palavra através do numero(0 ou 1) para a variável Comando.
-    Comando() #Roda a função escrita na variável Comando
+    Dictionary = {
+        0: Up,
+        1: Down,
+        2: Right,
+        3: Left,
+    }
+    Dictionary = Dictionary.get(int(input("Enter with 0 Up or 1 Down or 2 Right or 3 Left:")))
+    Dictionary()
