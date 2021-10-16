@@ -1,17 +1,26 @@
-def Up():
-    print("Up")
-def Down():
-    print("Up")
-def Right():
-    print("Up")
-def Left():
-    print("Up")
+def Upper():
+    Name = str(input("Write your name complete: "))
+    Split = Name.split()
+    print("Your name {} upper is {}".format(Name, Name.upper()))
+def Lower():
+    Name = str(input("Write your name complete: "))
+    print("Your name {} lower is {}".format(Name, Name.lower()))
+def Countfirst():
+    Name = str(input("Write your name complete: "))
+    Split = Name.split()
+    print("Your name {} have {} in first name".format(Name, len(Split[0])))
+    print("Countfirst")
+def Countall():
+    Name = str(input("Write your name complete: "))
+    Split = Name.split()
+    print("Your name {} have {} all your name".format(Name, len(Name)-Name.count(' ')))
+    print("Countall")
 while True:
-    Dictionary = {
-        0: Up,
-        1: Down,
-        2: Right,
-        3: Left,
+    Option = {
+        0 : Upper,
+        1 : Lower,
+        2 : Countfirst,
+        3 : Countall,
     }
-    Dictionary = Dictionary.get(int(input("Enter with 0 Up or 1 Down or 2 Right or 3 Left:")))
-    Dictionary()
+    Option = Option.get (int(input("Enter  with 0 to upper, 1 to lower, 2 to countfirst, 3 to count: ")))
+    Option()
